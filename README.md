@@ -70,9 +70,12 @@ Stol: 1099kr.
 T-shirt pris: 299kr. 
 Chocolade pris: 33kr. Mht: 01.04 2026
 ```
+
 ---------
+
 Hvis du undrer dig over at referencen til chokolade objektet ikke bare kunne være Perishable når nu det er en Perishable, er det et godt tegn. Du tænker rigtigt.
 Det er dog svært at forklare hvorfor ligenu, fordi det bliver først relevant når programmet er lidt mere udviklet. Helt kort kan man sige at det er fordi vi nogle gange har brug for at kunne erklære referencen uden at vi ved hvilken specifik type der skal instantieres, da det afhænger af noget andet.
+
 ---------
 1.8 For at lege lidt med betydningen af referencens datatyper, så lad os tilføje en metode til Perishable. Kald den isAfterBestBefore(). Metoden skal returnere true hvis den dato vi har nu, er efter porduktets udløbsdato.
 
