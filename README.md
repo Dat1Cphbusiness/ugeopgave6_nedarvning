@@ -1,6 +1,8 @@
-## Task 1: super og localDate
+## Task 1: Butik med produkter
 Her skal vi arbejde med en klasse der nedarver fra en anden. I dette program som skal bruges i en butik, findes der produkter og så findes der produkter som har en udløbsdato( som regel mad og drikkevarer)
 I programmet vil vi gerne behandle alt som et produkt, men madvarer har alligevel lige lidt ekstra, som vi også godt vil tage hånd om.
+
+**Emner:** super, LocalDate, instanceOf, downcasting, polymorfi
 
 1.1 Start et projekt med en Main klasse, hvori du har main metoden
 
@@ -104,8 +106,11 @@ Animal a = new Dog()         //reference of type superclass, but actual instance
 
 
 
-## Task 2: Nedarving og lister 
+## Task 2: Skole med roller
+Når du har læst om abstrakte klasser som er på programmet i morgen, kan du give dig i kast med denne øvelse.
 Her skal vi arbejde med tre klasser hvor de to arver fra den tredje.
+
+**Emner:** Nedarving og lister, instanceOf og downcasting, abstract og polymorfi
 
 3.1 Lav en klasse Person, med feltet name. Lav også en konstruktør og relevant getter- og setter-metode. Lav derudover metoden boolean addCourse(String course). Metoden skal ikke gøre noget, så du kan lade den returnere true og ikke gøre andet (en dummy-metode).
 
@@ -139,9 +144,10 @@ EKSTRA: Den korrekte Java-måde at lave en metode, der ikke gør noget, er dog a
 
 
 
-## Task 4: Interface
+## Task 4: 
 
 Når du har læst om interfaces som er på programmet i morgen, kan du give dig i kast med denne øvelse.
+**Emner:** Interface, polymorfi
 
 4.1 Lav et interface, Shape, med metoden double getArea() defineret.
 
