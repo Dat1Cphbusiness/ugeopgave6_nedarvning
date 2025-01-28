@@ -73,8 +73,8 @@ Chocolade pris: 33kr. Mht: 01.04 2026
 
 ---------
 
-Hvis du undrer dig over at referencen til chokolade objektet ikke bare kunne være Perishable når nu det er en Perishable, er det et godt tegn. Du tænker rigtigt.
-Det er dog svært at forklare hvorfor ligenu, fordi det bliver først relevant når programmet er lidt mere udviklet. Helt kort kan man sige at det er fordi vi nogle gange har brug for at kunne erklære referencen uden at vi ved hvilken specifik type der skal instantieres, da det afhænger af noget andet.
+_Hvis du undrer dig over at referencen til chokolade objektet ikke bare kunne være Perishable når nu det er en Perishable, er det et godt tegn. Du tænker rigtigt.
+Det er dog svært at forklare hvorfor ligenu, fordi det bliver først relevant når programmet er lidt mere udviklet. Helt kort kan man sige at det er fordi vi nogle gange har brug for at kunne erklære referencen uden at vi ved hvilken specifik type der skal instantieres, da det afhænger af noget andet._
 
 ---------
 1.8 For at lege lidt med betydningen af referencens datatyper, så lad os tilføje en metode til Perishable. Kald den isAfterBestBefore(). Metoden skal returnere true hvis den dato vi har nu, er efter porduktets udløbsdato.
@@ -84,9 +84,13 @@ Det er dog svært at forklare hvorfor ligenu, fordi det bliver først relevant n
 Du skal kigge på <code>LocalDate.now()</code> og <code>date.isAfter()</code> 
    </details> 
 
-1.9 I main metoden kan du prøve at kalde den nye metode du har lave på den Product instans der repræsenterer chokoladen. Det kan ikke lade sig gøre. Hvorfor mon? Det er fordi referencen er Product, og derfor kan man ikke kalde metoder og felter som kun er i Perishable, heller ikke selvom objektet jo ER af type Perishable.
-Løsningen er **ikke** bare at lave referencen om til Perishable. Løsningen er at tjekke om en _instans_ (ikke at forveksle med _referencen_) er af en bestemt type, downcaste referencen til den type, og dernæst kalde metoden. Prøv at se på flg. eksempel, og se om du kan 
-overføre det til din kode med Perishable og Product klasser.
+1.9 I main metoden kan du prøve at kalde den nye metode du har lave på den Product instans der repræsenterer chokoladen. Det kan ikke lade sig gøre. Hvorfor mon?
+
+Det er fordi referencen er Product, og derfor kan man ikke kalde metoder og felter som kun er i Perishable, heller ikke selvom objektet jo ER af type Perishable.
+Løsningen er **ikke** bare at lave referencen om til Perishable. Løsningen er at tjekke om en _instans_ (ikke at forveksle med _referencen_) er af en bestemt type, downcaste referencen til den type, og dernæst kalde metoden. 
+
+Analyser dette eksempel, indtil du helt forstår hvad der sker. 
+Prøv så om du kan overføre det til din kode, sådan at du får testet din nye metode i Perishable.
 
 ```java
 Animal a = new Dog()         //reference of type superclass, but actual instance of type subclass  
