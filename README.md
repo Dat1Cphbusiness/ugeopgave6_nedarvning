@@ -76,7 +76,8 @@ Chocolade pris: 33kr. Mht: 01.04 2026
 ---------
 
 _Hvis du undrer dig over at referencen til chokolade objektet ikke bare kunne være Perishable når nu det er en Perishable, er det et godt tegn. Du tænker rigtigt.
-Det er dog svært at forklare hvorfor ligenu, fordi det bliver først relevant når programmet er lidt mere udviklet. Helt kort kan man sige at det er fordi vi nogle gange har brug for at kunne erklære referencen uden at vi ved hvilken specifik type der skal instantieres, da det afhænger af noget andet._
+Det er dog svært at forklare hvorfor ligenu, fordi det bliver først relevant når programmet er lidt mere udviklet. 
+Helt kort kan man sige at det er fordi vi nogle gange har brug for at kunne **erklære** referencen uden at vi ved hvilken specifik type der skal **instantieres**._
 
 ---------
 1.8 For at lege lidt med betydningen af referencens datatyper, så lad os tilføje en metode til Perishable. Kald den isAfterBestBefore(). Metoden skal returnere true hvis den dato vi har nu, er efter porduktets udløbsdato.
@@ -144,15 +145,24 @@ EKSTRA: Den korrekte Java-måde at lave en metode, der ikke gør noget, er dog a
 
 
 
-## Task 4: 
+## Task 4:
+Når du har læst om interfaces, kan du give dig i kast med denne øvelse.
 
-Når du har læst om interfaces som er på programmet i morgen, kan du give dig i kast med denne øvelse.
 **Emner:** Interface, polymorfi
 
-4.1 Lav et interface, Shape, med metoden double getArea() defineret.
+4.a Skriv et interface der hedder Player, og som indeholder metoden `int guessANumber(int min, int max)`.
 
-4.2 Lav to klasser, Circle og Square, som implementerer interfacet. Lad de to klasser tage en double som parameter i konstruktøren. Denne double repræsenterer henholdsvis radius og længde på en cirkel og et kvadrat. Metoderne getArea() skal returnere cirklens eller kvadratets areal. Arealet for en cirkel er pi * r² (altså 3,14 * (radius * radius)). Test i en main, at getArea()-metoderne virker som du forventer.
+4.b Skriv to klasser som hver især implementerer dette interface:HumanPlayer og ComputerPlayer
 
-4.3 Lav en klasse ShapeBuilder, som kan holde en samling af Shapes i en ArrayList. Lav en metode addShape(Shape s) som bruges til at tilføje nye Shape-objekter.
+4.c I HumanPlayer skal `guessANumber` implementeres sådan at brugeren bliver bedt om at taste et tal mellem `min` og `max` i konsollen. Metoden skal returnere det tal spilleren har tastet.
 
-4.4 Lav metoden getTotalArea() i klassen ShapeBuilder, som returnerer det samlede areal af alle Shape-objekterne i ArrayListen. 
+4.d I ComputerPlayer skal `guessANumber` implementeres sådan at 'gættet' genereres ved brug af Random. Igen skal tallet returneres.
+
+4.e Skriv en main-metode, hvor du genererer et tilfældigt tal, som er det der skal gættes.
+
+4.f instansierer både en ComputerPlayer og en HumanPlayer og kald `guessANumber` på dem én ad gangen, hvor du efter et gæt evaluerer om det var for højt eller for lavt.
+
+4.g Fortsæt med at kalde de to spilleres `guessANumber` metoder, indtil der kan udnævnes en vinder.
+
+
+
