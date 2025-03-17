@@ -63,7 +63,7 @@ Chocolade pris: 33kr.
 
 
 1.g For at få udløbsdatoen på chokoladen med, skal du overskrive toString metoden i Perishable klassen.
-I din definitopn af toString i Perishable klassen, kan du starte med at hente outputtet fra super klassens version af toString metoden. Kald den med
+I din definition af toString i Perishable klassen, kan du starte med at hente outputtet fra super klassens version af toString metoden. Kald den med
 <code>
 String s = super.toString()
 </code>
@@ -85,7 +85,7 @@ Det er dog svært at forklare hvorfor ligenu, fordi det bliver først relevant n
 Helt kort kan man sige at det er fordi vi nogle gange har brug for at kunne **erklære** referencen uden at vi ved hvilken specifik type der skal **instantieres**._
 
 ---------
-1.h For at lege lidt med betydningen af referencens datatyper, så lad os tilføje en metode til Perishable. Kald den isAfterBestBefore(). Metoden skal returnere true hvis den dato vi har nu, er efter porduktets udløbsdato.
+1.h For at lege lidt med betydningen af referencens datatyper, så lad os tilføje en metode til Perishable. Kald den isAfterBestBefore(). Metoden skal returnere true hvis den dato vi har nu, er efter produktets udløbsdato.
 
 <details> 
         <summary> Hint</summary>
