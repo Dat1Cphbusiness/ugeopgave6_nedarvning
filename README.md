@@ -4,8 +4,8 @@ Task 1 og 2 træner hvad du lærte til mandagslektionen. Task3 kan du kaste dig 
 [Se Forberedelse til onsdag](https://dat1cphbusiness.github.io/content/inheritance/#onsdag)
 
 ## Task 1: Butik med produkter
-Her skal vi arbejde med en klasse der nedarver fra en anden. I dette program som skal bruges i en butik, findes der produkter og så findes der produkter som har en udløbsdato( som regel mad og drikkevarer)
-I programmet vil vi gerne behandle alt som et produkt, men madvarer har alligevel lige lidt ekstra, som vi også godt vil tage hånd om.
+Her skal vi arbejde med en klasse der nedarver fra en anden. I dette program som skal bruges i en butik, findes der produkter, herunder produkter, som har en udløbsdato( som regel mad og drikkevarer).
+I programmet vil vi gerne behandle alt som et produkt, men madvarer har alligevel lige lidt ekstra, som vi gerne vil tage hånd om.
 
 **Emner:** super, LocalDate, instanceOf, downcasting, polymorfi
 
